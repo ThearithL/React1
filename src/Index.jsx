@@ -4,6 +4,7 @@ export default function () {
   return (
     <div>
         Hello index.jsx
+        hi everyone
     </div>
   )
 }
