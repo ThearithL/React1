@@ -18,3 +18,7 @@ export default function Dta() {
     <div><Data/></div>
   )
 }
+
+
+
+
