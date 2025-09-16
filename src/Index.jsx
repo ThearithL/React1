@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function () {
   return (
-    <div>
+    <h1 color='red'> 
         Hello index.jsx
         hi everyone
-    </div>
+    </h1>
   )
 }
