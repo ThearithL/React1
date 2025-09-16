@@ -11,11 +11,15 @@
 // }
 // rfc
 import React from 'react'
-import Data from './component/Data'
+// import Data from './component/Data'
+import State from './component/State'
 
-export default function Dta() {
+export default function App() {
   return (
-    <div><Data/></div>
+    // <div><Data/></div>
+    <div>
+      <State/>
+    </div>
   )
 }
 

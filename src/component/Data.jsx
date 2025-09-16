@@ -92,7 +92,7 @@ export default function Data() {
             <th>EMAIL</th>
           </tr>
           {user.map((item, index) => (
-            <tr key={index} className='border-2 border-black text-center hover:bg-gray-300 '>
+            <tr key={index} className='border-2 border-black text-center hover:bg-gray-300/5 '>
               <td>{item.name}</td>
               <td>{item.gender}</td>
               <td>{item.age}</td>
