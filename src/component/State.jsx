@@ -9,7 +9,7 @@ export default function State() {
           <h1 className='text-3xl'>{Number}</h1>
         </div>
       <div>
-                <button onClick={()=> setNumber(Number+1)} className='text-5xl bg-green-500  m-3'>+1</button > <br/>
+                <button onClick={()=> setNumber(Number+1)} className='text-5xl bg-green-500  m-3'>+1</button >
         <button onClick={()=> setNumber(Number-1)} className='text-5xl bg-red-500 '>-1</button>
       </div>
     </div>
