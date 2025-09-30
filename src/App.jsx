@@ -62,11 +62,15 @@
 
 import React from 'react'
 import Nav from './component/Nav'
+import SlideBar from './component/SlideBar'
 
 export default function App() {
   return (
     <div>
       <Nav/>
+     <div className='px-5 my-5'>
+       <SlideBar/>
+     </div>
     </div>
   )
 }
