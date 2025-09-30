@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
 import { IoMdMenu } from "react-icons/io";
-import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 export default function Nav() {
     const [menu , setMenu] = useState(true)
@@ -49,7 +48,7 @@ export default function Nav() {
                 </div>
                 <div className="w-[50%] h-full flex items-center justify-end px-3 text-3xl">
                     <div onClick={()=>setMenu(!menu)}>
-                        {menu ? }
+                        {menu ? <IoMdMenu /> : <IoMdClose />}
 
                     </div>
 
@@ -57,6 +56,12 @@ export default function Nav() {
 
             </div>
 
+            {/* ------------------------- Slide -------------------------- */}
+              <div className={`fixed top-0 left-0 bg-blue-600 w-[50%] h-[100vh] transition-all duration-150 ${menu ? '-translate-x-full' : 'translate-x-0'}`}></div>
+              {/* close slide */}
+              <div onClick={()=>setMenu(!menu)} className={`fixed top-0 right-0 w-[50%] h-[100vh] ${menu ? 'translate-x-full' : 'translate-x-0'}`}>
+
+              </div>
         </nav>
     </div>
   );
